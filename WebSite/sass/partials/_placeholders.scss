@@ -1,0 +1,9 @@
+@charset "utf-8";
+// ====================================================================
+// Placeholder styles - these only get generated into the CSS if they are extended elsewhere
+// For example: @extend %clearfix;
+// ====================================================================
+
+%clearfix {
+	@include clearfix;
+}

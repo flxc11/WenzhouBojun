@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+.scrollbox{width:732px; float: left;}
+#scrollDiv{width:660px;height:70px; overflow:hidden; float: left;}/*这里的高度和超出隐藏是必须的*/
+#scrollDiv li{height:70px;line-height:70px; vertical-align:bottom; zoom:1; font-size: 13px;}
+
+.scroltit{ height:70px; line-height:70px; float: left; width: 66px;}
+.scroltit h3{ width:100px; float:left;}
+.scroltit small{float:right; font-size:13px;}
+#but_down,#but_up {
+	float: left;
+	width: 17px;
+	height: 17px;
+	display: block;
+	margin-top: 26px;
+}
+#but_down {
+	background: url(../../images/btndown.png);
+}
+#but_up {
+	background: url(../../images/btnup.png);
+}

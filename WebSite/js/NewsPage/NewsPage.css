@@ -1,0 +1,117 @@
+.NewsPage,#NewsPage
+{
+    line-height: 23px;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+}
+.JcmsNewsPage
+{
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+    line-height: 23px;
+}
+.JcmsNewsPage em {
+	display: inline-block;
+	line-height: 23px;
+	font-size: 14px;
+	font-style: normal;
+	vertical-align: top;
+	margin-right: 7px;
+}
+.JcmsNewsPage a,.JcmsNewsPage span
+{
+    font-size: 14px;
+    line-height: 21px;
+    display: inline-block;
+    overflow: hidden;
+    width: 21px;
+    height: 21px;
+    margin-right: 7px;
+    border: 1px solid #d4d4d4;
+}
+.JcmsNewsPage span.num
+{
+    color: #fff;
+    border: 1px solid #005ea3;
+    background: #005ea3;
+}
+.JcmsNewsPage span.prev
+{
+    background: url(../images/NewsPage.png) #fff;
+}
+.JcmsNewsPage span.next
+{
+    background: url(../images/NewsPage.png) right bottom #fff;
+}
+.JcmsNewsPage a.num:link,.JcmsNewsPage a.num:visited
+{
+    color: #787878;
+    background: #fff;
+}
+.JcmsNewsPage a.num:hover
+{
+    color: #fff;
+    border: 1px solid #005ea3;
+    background: #005ea3;
+}
+.JcmsNewsPage a.prev
+{
+    background: url(../images/NewsPage.png) left top no-repeat #fff;
+}
+.JcmsNewsPage a.prev:hover
+{
+    background-color: #005ea3;
+    background-position: -38px top;
+}
+.JcmsNewsPage a.next
+{
+    background: url(../images/NewsPage.png) right bottom no-repeat #fff;
+}
+.JcmsNewsPage a.next:hover
+{
+    background-color: #005ea3;
+    background-position: left -38px;
+}
+.JcmsNewsPage .txt,.JcmsNewsPage .btn
+{
+    font-size: 14px;
+    line-height: 38px;
+    float: right;
+    overflow: hidden;
+    width: 38px;
+    height: 38px;
+    margin-left: 7px;
+    text-align: center;
+    color: #787878;
+    border: 1px solid #c5c6c7;
+    background: #fff;
+}
+.JcmsNewsPage .btn
+{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.JcmsNewsPage .btn:hover
+{
+    color: #fff;
+    border: 1px solid #005ea3;
+    background: #005ea3;
+}
+.JcmsNewsPage p
+{
+    line-height: 40px;
+    float: right;
+    margin: 0;
+    padding-right: 5px;
+    white-space: nowrap;
+}
+.JcmsNewsPage a.page_index {
+	width: auto;
+	border: none;
+	font-size: 14px;
+	line-height: 23px;
+	height: 23px;
+}

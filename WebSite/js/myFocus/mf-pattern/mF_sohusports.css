@@ -1,0 +1,23 @@
+/*=========mF_sohusports========*/
+.mF_sohusports{ position:relative; background: #1b4a7d;}
+.mF_sohusports .loading{ position:absolute; width:100%; height:100%; background:#fff url(img/loading.gif) center no-repeat; z-index:9;}
+.mF_sohusports .pic {
+	width: 327px;height: 263px;
+}
+.mF_sohusports .pic li{position:absolute; display:none;}
+.mF_sohusports .txt {
+	position: absolute;
+	right: 16px;
+	top: 0;
+	z-index: 99;
+	width: 192px;
+	height: 130px;
+}
+.mF_sohusports .txt li{position:absolute;z-index:2;top:10px;line-height:36px; display:none;width: 190px;}
+.mF_sohusports .txt li a{display:block;position:relative;z-index:1;color:#fff;font-size:20px;text-decoration:none; font-family: "微软雅黑", "Microsoft YaHei", "宋体", Arial;}/*标题样式*/
+.mF_sohusports .txt li b{display:block;height:130px;width:190px;position:absolute;top:0;left:0;}/*标题背景*/
+.mF_sohusports .txt li p{display:none;}/*隐藏详细描述*/
+.mF_sohusports .num{position:absolute;z-index:3;bottom:27px;right:20px;}/*按钮样式*/
+.mF_sohusports .num li{float:left;}
+.mF_sohusports .num li a{color:#fff;float:left;width:15px;height:15px;line-height:15px;overflow:hidden;text-align:center;margin-right:21px;cursor:pointer;background:url("../../../images/iconpoint1.jpg") left no-repeat;text-decoration:none; text-indent: -9999px;}
+.mF_sohusports .num li.current a,.mF_sohusports .num li.hover a{color:#FF7B11;background-position:right; background:url("../../../images/iconpoint2.jpg") left no-repeat;}/*当前/悬停按钮样式*/

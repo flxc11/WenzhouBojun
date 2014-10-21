@@ -1,0 +1,24 @@
+.menuTitle {
+	FONT-WEIGHT: bold
+}
+.cTD1 {
+	FONT-WEIGHT: bold; BACKGROUND: url(../images/menu_bg.gif) no-repeat; CURSOR: pointer; COLOR: #000; HEIGHT: 27px; TEXT-ALIGN: center
+}
+.cTDonliNic {
+	FONT-WEIGHT: bold; BACKGROUND: url(../images/menu_bg.gif) no-repeat; COLOR: #000; HEIGHT: 27px; TEXT-ALIGN: center
+}
+.sTD1 {
+	FONT-WEIGHT: bold; BACKGROUND: url(../images/menu_bg.gif) no-repeat; CURSOR: pointer; COLOR: #000; HEIGHT: 27px; TEXT-ALIGN: center
+}
+.oTD1 {
+	FONT-WEIGHT: bold; BACKGROUND: url(../images/menu_bg.gif) no-repeat; CURSOR: pointer; COLOR: #000; HEIGHT: 27px; TEXT-ALIGN: center
+}
+.cTD2 {
+	FONT-WEIGHT: bold; BACKGROUND: url(../images/menu_bg2.gif) #fff no-repeat; CURSOR: pointer; COLOR: #669a01; TEXT-INDENT: 60px; HEIGHT: 26px
+}
+.sTD2 {
+	FONT-WEIGHT: bold; BACKGROUND: url(../images/menu_bg2.gif) #fff no-repeat; CURSOR: pointer; COLOR: #669a01; TEXT-INDENT: 60px; HEIGHT: 26px
+}
+.oTD2 {
+	BACKGROUND: url(../images/menu_bg1.gif) #ecf7ff no-repeat; CURSOR: pointer; COLOR: #333; TEXT-INDENT: 60px; HEIGHT: 26px
+}

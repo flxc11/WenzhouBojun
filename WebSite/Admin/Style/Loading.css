@@ -1,0 +1,136 @@
+.popup {
+	VISIBILITY: hidden
+}
+.popup-man {
+	BACKGROUND: #1f3447; FILTER: progid:DXImageTransform.Microsoft.Alpha(opacity=50,style=0); WIDTH: 100%; POSITION: absolute; TOP: 0px; moz-opacity: 0.5
+}
+.popup-man-operate {
+	BACKGROUND: #1f3447; FILTER: progid:DXImageTransform.Microsoft.Alpha(opacity=30,style=0); WIDTH: 100%; POSITION: absolute; TOP: 0px; moz-opacity: 0.3
+}
+.popup-man-tabloading {
+	BACKGROUND: #ffffff; FILTER: progid:DXImageTransform.Microsoft.Alpha(opacity=1,style=0); WIDTH: 100%; POSITION: absolute; TOP: 0px; moz-opacity: 0.01
+}
+#float-loading {
+	MARGIN-TOP: -57px; Z-INDEX: 50; LEFT: 50%; MARGIN-LEFT: -168px; WIDTH: 333px; POSITION: absolute; TOP: 50%; HEIGHT: 122px
+}
+.float-con {
+	WIDTH: 100%; POSITION: absolute; HEIGHT: 100%
+}
+.float-con .pdright {
+	PADDING-RIGHT: 3px; HEIGHT: 100%
+}
+.float-con .pdright .con-tent {
+	BORDER-RIGHT: #000 1px solid; BORDER-TOP: #000 1px solid; BACKGROUND: url(../images/loading.jpg) #4b6c8d; BORDER-LEFT: #000 1px solid; BORDER-BOTTOM: #000 1px solid; HEIGHT: 100%
+}
+.float-con .pdright .exit {
+	BORDER-RIGHT: #000 1px solid; BORDER-TOP: #000 1px solid; BACKGROUND: #fff; BORDER-LEFT: #000 1px solid; BORDER-BOTTOM: #000 1px solid; HEIGHT: 100%
+}
+.float-con .pdright .exit .exit-title {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; BACKGROUND: url(../images/exit-title-bg.gif) repeat-x; PADDING-BOTTOM: 0px; MARGIN: 1px; PADDING-TOP: 5px; HEIGHT: 25px
+}
+.float-con .pdright .exit .exit-title .exit-title-left {
+	FLOAT: left; COLOR: #234967
+}
+.float-con .pdright .exit .exit-title .exit-title-right {
+	FLOAT: right
+}
+.float-con .pdright .exit .exit-content {
+	FONT-WEIGHT: bold; MARGIN: 10px 0px; COLOR: #ff6600; TEXT-ALIGN: center
+}
+.float-con .pdright .exit .exit-content INPUT {
+	BACKGROUND: url(../images/buttom_bg1.gif) no-repeat; WIDTH: 72px; CURSOR: pointer; COLOR: #395366; BORDER-TOP-STYLE: none; LINE-HEIGHT: 17px; PADDING-TOP: 3px; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; HEIGHT: 20px; BORDER-BOTTOM-STYLE: none
+}
+.loading-line-bg {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: url(../images/load_lineBG.gif); PADDING-BOTTOM: 1px; MARGIN: 62px 20px 0px; PADDING-TOP: 1px
+}
+.logoutmsg {
+	PADDING-LEFT: 58px; FONT-WEIGHT: bold; MARGIN: 65px 20px 0px
+}
+.logoutbuttom {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 1px; PADDING-TOP: 7px; TEXT-ALIGN: center
+}
+.logoutbuttom INPUT {
+	FONT-WEIGHT: normal; BACKGROUND: url(../images/out-bg.gif) no-repeat; WIDTH: 60px; CURSOR: pointer; COLOR: #b8d3eb; BORDER-TOP-STYLE: none; PADDING-TOP: 2px; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; HEIGHT: 20px; TEXT-ALIGN: center; BORDER-BOTTOM-STYLE: none
+}
+.loading-font {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; COLOR: #fff; HEIGHT: 22px; TEXT-ALIGN: center
+}
+.loading-fonta {
+	PADDING-RIGHT: 6px; COLOR: #b5c1cd; TEXT-ALIGN: right
+}
+.loading-fonta A {
+	COLOR: #b5c1cd; TEXT-DECORATION: none
+}
+.loading-fonta A:hover {
+	COLOR: #fff; TEXT-DECORATION: none
+}
+.float-con .pdright .float-bottom {
+	BACKGROUND: #000; FILTER: progid:DXImageTransform.Microsoft.Alpha(opacity=30,style=0); MARGIN-LEFT: 3px; HEIGHT: 3px; moz-opacity: 0.3
+}
+.float-right {
+	BORDER-RIGHT: #1d3041 1px solid; BORDER-TOP: #1d3041 1px solid; MARGIN-TOP: 3px; Z-INDEX: 49; RIGHT: 0px; BACKGROUND: #000; FILTER: progid:DXImageTransform.Microsoft.Alpha(opacity=30,style=0); BORDER-LEFT: #1d3041 1px solid; WIDTH: 1px; BORDER-BOTTOM: #1d3041 1px solid; POSITION: absolute; HEIGHT: 100%; moz-opacity: 0.3
+}
+.float-exit {
+	BORDER-RIGHT: #9fb5c7 1px solid; BORDER-TOP: #9fb5c7 1px solid; MARGIN-TOP: -58px; Z-INDEX: 50; BACKGROUND: url(../images/float_bigBg.gif) #fcfdff no-repeat right bottom; LEFT: 50%; MARGIN-LEFT: -116px; BORDER-LEFT: #9fb5c7 1px solid; WIDTH: 285px; BORDER-BOTTOM: #9fb5c7 1px solid; POSITION: absolute; TOP: 50%
+}
+.float-exit .exit-title {
+	BORDER-RIGHT: #cfd9e4 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #fff 1px solid; PADDING-LEFT: 10px; BACKGROUND: url(../images/exit-title-bg.gif) repeat-x; PADDING-BOTTOM: 0px; BORDER-LEFT: #fff 1px solid; CURSOR: move; MARGIN-RIGHT: 1px; PADDING-TOP: 5px; HEIGHT: 25px
+}
+.float-exit .exit-title-left {
+	FLOAT: left; COLOR: #234967
+}
+.float-exit .exit-title-right {
+	FLOAT: right
+}
+.float-exit .exit-content {
+	PADDING-RIGHT: 20px; PADDING-LEFT: 20px; MARGIN: 14px 0px; COLOR: #59768c
+}
+.float-exit .exit-content2 {
+	MARGIN: 5px 0px 10px; TEXT-ALIGN: center
+}
+.float-exit .exit-content2 INPUT {
+	FONT-SIZE: 12px; BACKGROUND: url(../images/pop_button.gif) no-repeat; WIDTH: 55px; CURSOR: pointer; COLOR: #213b4f; BORDER-TOP-STYLE: none; LINE-HEIGHT: 17px; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; HEIGHT: 20px; BORDER-BOTTOM-STYLE: none
+}
+.float-tif {
+	BORDER-RIGHT: #9fb5c7 1px solid; BORDER-TOP: #9fb5c7 1px solid; MARGIN-TOP: -51px; Z-INDEX: 50; BACKGROUND: url(../images/float_bigBg.gif) #fcfdff repeat-y right bottom; LEFT: 50%; MARGIN-LEFT: -116px; BORDER-LEFT: #9fb5c7 1px solid; WIDTH: 233px; BORDER-BOTTOM: #9fb5c7 1px solid; POSITION: absolute; TOP: 50%; HEIGHT: 102px
+}
+.float-tif .exit-title {
+	BORDER-RIGHT: #cfd9e4 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #fff 1px solid; PADDING-LEFT: 10px; BACKGROUND: url(../images/exit-title-bg.gif) repeat-x; PADDING-BOTTOM: 0px; BORDER-LEFT: #fff 1px solid; MARGIN-RIGHT: 1px; PADDING-TOP: 5px; HEIGHT: 25px
+}
+.float-tif .exit-title-left {
+	FLOAT: left; COLOR: #234967
+}
+.float-tif .exit-content {
+	MARGIN: 18px 0px 0px; COLOR: #59768c; TEXT-ALIGN: center
+}
+.float-approve {
+	BORDER-RIGHT: #9fb5c7 1px solid; BORDER-TOP: #9fb5c7 1px solid; MARGIN-TOP: -58px; Z-INDEX: 50; BACKGROUND: url(../images/float_bigBg.gif) #fcfdff repeat-y right bottom; LEFT: 50px; MARGIN-LEFT: -116px; BORDER-LEFT: #9fb5c7 1px solid; WIDTH: 285px; BORDER-BOTTOM: #9fb5c7 1px solid; POSITION: absolute; TOP: 50px
+}
+.float-approve .exit-title {
+	BORDER-RIGHT: #cfd9e4 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #fff 1px solid; PADDING-LEFT: 10px; BACKGROUND: url(../images/exit-title-bg.gif) repeat-x; PADDING-BOTTOM: 0px; BORDER-LEFT: #fff 1px solid; CURSOR: move; MARGIN-RIGHT: 1px; PADDING-TOP: 5px; HEIGHT: 25px
+}
+.float-approve .exit-title-left {
+	FLOAT: left; COLOR: #234967
+}
+.float-approve .exit-title-right {
+	FLOAT: right
+}
+.float-approve .exit-content {
+	PADDING-RIGHT: 20px; PADDING-LEFT: 20px; MARGIN: 6px 0px 10px; COLOR: #59768c
+}
+.float-approve .exit-content2 {
+	MARGIN: 4px 0px 10px; TEXT-ALIGN: center
+}
+.float-approve .exit-content2 INPUT {
+	FONT-SIZE: 12px; BACKGROUND: url(../images/pop_button.gif) no-repeat; WIDTH: 55px; CURSOR: pointer; COLOR: #213b4f; BORDER-TOP-STYLE: none; LINE-HEIGHT: 17px; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; HEIGHT: 20px; BORDER-BOTTOM-STYLE: none
+}
+html{
+scrollbar-face-color: #DBEBFE; 
+scrollbar-shadow-color: #B8D6FA;
+scrollbar-highlight-color: #FFFFFF; 
+scrollbar-3dlight-color: #DBEBFE;
+scrollbar-darkshadow-color:#458CE4; 
+scrollbar-track-color: #FFFFFF; 
+scrollbar-arrow-color: #458CE4
+
+}

@@ -1,0 +1,10 @@
+#loginbox{width:600px; height:400px;text-align:left;display:none;background:#f2f2f2; font-family:'宋体'; overflow:hidden;}
+#loginbox .t{display:block;padding:0 15px; width:568px;border:1px solid #367f34;border-bottom:none;border-top:none;background:#0070bc;color:#fff;line-height:30px; float:left}
+#loginbox .t b{float:left;font-size:14px}
+#loginbox .t span{ float:right; font-size:12px; cursor: pointer;}
+#loginbox .wrapper{width:600px; float:left; height: 370px; background: #000;}
+#loginbox .btnLogin{width:104px; height:37px; background:url(../images/login_btn.gif); cursor:pointer; border:none; float:left; margin-top:10px; margin-right:20px}
+#loginbox .Text{height:20px;border:1px solid #c4c4c4;background:#FFF;}loat:right; font-size:12px; cursor: pointer;}
+#loginbox .wrapper{width:600px; float:left; height: 370px; background: #000;}
+#loginbox .btnLogin{width:104px; height:37px; background:url(../images/login_btn.gif); cursor:pointer; border:none; float:left; margin-top:10px; margin-right:20px}
+#loginbox .Text{height:20px;border:1px solid #c4c4c4;background:#FFF;}

@@ -1,0 +1,5 @@
+﻿@charset "utf-8";
+*{margin:0px;padding:0px;list-style:none;}
+html {height:100%;}
+body{background:#08356b;height:100%; font-size:12px; font-family:Verdana,宋体;}
+a{text-decoration:none}

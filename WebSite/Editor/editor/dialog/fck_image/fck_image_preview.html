@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="noindex, nofollow" />
+<script src="../common/fck_dialog_common.js" type="text/javascript"></script>
+<script type="text/javascript">
+var FCKTools	= window.parent.FCKTools ;
+var FCKConfig	= window.parent.FCKConfig ;
+// Set the preview CSS
+document.write( FCKTools.GetStyleHtml( FCKConfig.EditorAreaCSS ) ) ;
+document.write( FCKTools.GetStyleHtml( FCKConfig.EditorAreaStyles ) ) ;
+if ( window.parent.FCKConfig.BaseHref.length > 0 )
+document.write( '<base href="' + window.parent.FCKConfig.BaseHref + '">' ) ;
+window.onload = function()
+{
+	window.parent.SetPreviewElements(
+	document.getElementById('imgPreview'),
+	document.getElementById('lnkPreview'));
+}
+</script>
+</head>
+<body>
+<div>
+<a id="lnkPreview" onClick="return false;" style="cursor: default">
+<img id="imgPreview" onload="window.parent.UpdateOriginal();" style="display: none" alt="" /></a>
+温州市捷点信息技术有限公司是一家新型的高科技公司，主要以从事网络应用服务开发、运营为主，同时从事专业网站、多媒体技术的开发和建设，致力于为客户利用互联网进行网上营销的全方位网络服务。公司团队组建于2003年，自组建以来一直秉持高质量作风完成每一个项目，并提供稳定、优秀的后期服务，以强大的品牌优势和服务优势立足于浙南地区。05年开始，公司主要从事网络营销、企业品牌线上形象的建立与执行推广，将全力为您推出面向营销的网站设计，也就是说，企业建站只有面向营销、面向目标客户，才能够发挥网站整体的效用。
+</div>
+</body>
+</html>

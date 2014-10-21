@@ -1,0 +1,37 @@
+.mF_cnvp2014 .loading{ position:absolute; width:100%; height:100%; z-index:9;}
+.mF_cnvp2014 .pic{position:absolute;z-index:1;width:327px;height:263px; overflow:hidden;}
+.mF_cnvp2014 .pic li{ position:absolute; top:0;width: 100%;opacity: 0;filter: alpha(opacity=0);text-align: center;overflow: hidden;}
+.mF_cnvp2014 .pic li img{position: relative;}
+.mF_cnvp2014 .txt{position:absolute;z-index:2; top:12px;left:12px; width:200px;}/*默认标题高度*/
+.mF_cnvp2014 .txt li{position:absolute;top:0;width:100%; padding:12px; display:none;}
+.mF_cnvp2014 .txt li a{position:relative;z-index:1;display:block;color:#fff;font-size:14px;font-weight:bold;text-decoration:none; font-family:'微软雅黑';}/*标题样式*/
+.mF_cnvp2014 .txt li b{position:absolute;top:0;left:0;display:block;width:100%;height:100%;background:#000;filter:alpha(opacity=20);opacity:0.2; border-radius:5px;}
+.mF_cnvp2014 .txt li p{color:#fff;}
+.mF_cnvp2014 .dot{position:absolute; z-index:3;bottom:8px;left:0;width:100%;text-align:center;}
+.mF_cnvp2014 .dot li{ display:inline-block;margin:0 3px;*display:inline;*zoom:1; width:16px;height:16px; background:url(img/mF_cnvp2014/dots.png); cursor:pointer;}
+.mF_cnvp2014 .dot li.current{background-position: 0 -16px;}
+.mF_cnvp2014 .prev,.mF_cnvp2014 .next{ -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; -o-user-select: none; user-select: none; visibility:hidden;
+    position: absolute;
+    bottom: 50%;
+    cursor: pointer;
+    z-index: 10;
+    width: 40px;
+    height: 50px;
+    left:12px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #000;
+    background-image: url(img/mF_cnvp2014/left.png);
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    -webkit-transition: opacity 0.4s ease 0.1s;
+    -o-transition: opacity 0.4s ease 0.1s;
+    transition: opacity 0.4s ease 0.1s;
+}
+.mF_cnvp2014 .next{ left:auto;right:12px; background-image: url(img/mF_cnvp2014/right.png);}
+.mF_cnvp2014 .prev:hover,.mF_cnvp2014 .next:hover{opacity: 8;filter: alpha(opacity=80);}
+.mF_cnvp2014 .arr-hover{ visibility:visible; opacity: 0.4;filter: alpha(opacity=40);}
+

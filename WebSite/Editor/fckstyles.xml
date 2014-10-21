@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Styles>
+	<Style name="标题文字" element="span">
+		<Style name="font-family" value="黑体" />
+		<Style name="font-size" value="20px" />
+	</Style>
+</Styles>

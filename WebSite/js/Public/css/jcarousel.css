@@ -1,0 +1,77 @@
+.Public-JC{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.Public-JC ul{
+    width: 2000em;
+    position: relative;
+    overflow: hidden;
+}
+.Public-JC ul li{
+    float: left;
+    vertical-align: middle;
+    position: relative;
+    overflow: hidden;
+}
+.Public-JC ul li img{
+    float: left;
+}
+.Public-JC .pagination{
+    width: 100%;
+    height: 14px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: 0
+}
+.Public-JC .pagination span{
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    margin: 0 5px 18px;
+    cursor: pointer;
+    background: url(../images/page.png) no-repeat -10px 0;
+    width: 10px;
+    height: 0px;
+    padding-top: 10px;
+    overflow: hidden; 
+    position: relative;
+    z-index: 10
+}
+.Public-JC .pagination span.active {
+    background-position: 0 0; 
+}
+.Public-JC .Control .Prev,.Public-JC .Control .Next{
+    position: absolute;
+    width: 40px;
+    height: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 10;
+    display: none;
+    background-color: #000;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    box-shadow: 0 1px 3px rgba(0,0,0,.2);
+}
+.Public-JC .Control .Prev:hover,.Public-JC .Control .Next:hover{
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    -webkit-transition: opacity 0.6s ease 0.1s;
+    -moz-transition: opacity 0.6s ease 0.1s;
+    -ms-transition: opacity 0.6s ease 0.1s;
+    -o-transition: opacity 0.6s ease 0.1s;
+    transition: opacity 0.6s ease 0.1s;
+}
+.Public-JC .Control .Prev{
+    left: 15px;
+    background-image: url(../images/left.png);
+}
+.Public-JC .Control .Next{
+    right: 15px;
+    background-image: url(../images/right.png);
+}

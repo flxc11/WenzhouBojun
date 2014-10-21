@@ -1,0 +1,275 @@
+@charset "utf-8";
+.logo {
+	width: 400px;
+	height: 60px;
+	padding-top: 26px;
+	float: left;
+}
+.add {
+	float: right;
+	width: 220px;
+	overflow: hidden;
+}
+.fav {
+	width: 146px;
+	height: 30px;
+	line-height: 30px;
+	background: #e7d29d;
+	border-radius: 0 0 5px 5px;
+	float: right;
+	text-align: center;
+	color: #835b24;
+}
+.fav a {
+	color: #835b24;
+}
+.tel {
+	float: right;
+	background-image: image-url('imgtel.jpg');
+	background-position: 0 center;
+	background-repeat: no-repeat;
+	line-height: 30px;
+	color: #555;
+	font-family: verdana;
+	padding-left: 34px;
+	margin-top: 26px;
+	font-size: 20px;
+}
+.nav {
+	height: 48px;
+	width: $w100;
+	background-image: image-url('bgnav.jpg');
+	border-radius: 0 0 5px 5px;
+	ul {
+		width: 700px;
+		li {
+			float: left;
+			width: 100px;
+			line-height: 48px;
+			font-size: 14px;
+			font-family: $font1;
+			text-align: center;
+			background-image: image-url('bgnavli.jpg');
+			background-position: right 0;
+			background-repeat: no-repeat;
+			a {
+				color: #4d2d01;
+				&:hover {
+					color: #3947a3;
+				}
+			}
+		}
+	}
+}
+.search {
+	width: 180px;
+	height: 28px;
+	background: #fff;
+	float: right;
+	margin: 11px 15px 0 0;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.ipt-submit {
+	float: right;
+	width: 14px;
+	height: 14px;
+	background-image: image-url('iconsearch.jpg');
+	margin: 7px 10px 0 0;
+	cursor: pointer;
+	border: 0;
+}
+.ipt-keyword {
+	width: 135px;
+	padding-left: 10px;
+	line-height: 28px;
+	float: left;
+	border: 0;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.ban {
+	padding: 10px;
+	margin: 20px 0 30px 0;
+	background: #fff;
+	width: 960px;
+	height: 300px;
+	overflow: hidden;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.topnews-l,.topnews-m,.topnews-r {
+	float: left;
+}
+.topnews-l {
+	width: 164px;
+	padding-top: 26px;
+}
+.topnews-r a {
+	color: #b7302e;
+	font-size: 13px;
+	font-family: $font1;
+	line-height: 70px;
+}
+.Public-JC {
+	width: 960px;
+	height: 300px;
+	overflow: hidden;
+}
+.main-1-r {
+	float: right;
+	width: 296px;
+	span {
+		display: block;
+		line-height: 30px;
+		border-bottom: 1px solid #e8e8e8;
+		font-size: 13px;
+		i {
+			background-image: image-url('icon.png');
+			float: left;
+			width: 14px;
+			height: 14px;
+			margin-top: 8px;
+			margin-right: 6px;
+		}
+	}
+}
+.h-title {
+	padding-bottom: 16px;
+}
+.add {
+	background-position: 0 0;
+}
+.user {
+	background-position: -14px 0;
+}
+.tel1 {
+	background-position: -28px 0;
+}
+.email {
+	background-position: -42px 0;
+}
+.main-1-l {
+	width: 630px;
+	float: left;
+	dl {
+		overflow: hidden;
+		width: 100%;
+		dt {
+			float: right;
+			width: 400px;
+			font-size: 13px;
+			span {
+				color: #b7302e;
+			}
+		}
+		dd {
+			float: left;
+			width: 216px;
+			height: 156px;
+		}
+	}
+}
+.pro-title {
+	width: $w980;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 30px 0 20px;
+}
+/**********
+start video
+**********/
+.v_caption {
+  height: 30px;
+  overflow: hidden;
+  width: 100%;
+    position: absolute;
+    top: 183px;
+}
+.highlight_tip {
+    height: 30px;
+  width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 999;
+}
+.prev,
+.next {
+  cursor: pointer;
+  width: 17px;
+  height: 30px;
+  font-size: 14px;
+  line-height: 14px;
+  text-indent: -9999px;
+  display: inline-block;
+  *dispyay: inline;
+  *zoom: 1;
+}
+.prev {
+  background: url("../images/icon.png") no-repeat 0 -14px;
+  float: left;
+}
+.next {
+  background: url("../images/icon.png") no-repeat -17px -14px;
+  float: right;
+}
+.video_show {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.video_content {
+  position: relative;
+  width: 980px;
+  height: 456px;
+  overflow: hidden;
+  margin-left: 43px;
+}
+.video_content_list {
+  position: absolute;
+  width: 25000px;
+  top: 0px;
+  left: 0px;
+}
+.video_content ul {
+  float: left;
+  width: 1000px;
+  height: 456px;
+  overflow: hidden;
+}
+.video_content ul li {
+  display: inline;
+  float: left;
+  width: 230px;
+  margin-right: 20px;
+  color: #333;
+  font: normal 12px/38px "微软雅黑", "Microsoft YaHei", "宋体", "SimSun", "黑体", "SimHei";
+  text-align: center;
+  span {
+  	display: block;
+  }
+}
+.video_content ul li img {
+  width: 220px;
+  height: 160px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #e8e8e8;
+  padding: 4px;
+}
+.video_content ul li img:hover {
+	border: 5px solid #e7d29d;
+	padding: 0;
+}
+/**********
+end video
+**********/
+.footer-1 {
+	width: $w100;
+	height: 40px;
+	background: #e1af69;
+}

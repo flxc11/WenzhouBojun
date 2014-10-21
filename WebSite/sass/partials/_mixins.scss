@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+@mixin semi-transparent-colors($attribute,$color,$background){
+    $percent: alpha($color) * 100%;
+    $opaque: opacify($color,1);
+    $solid-color: mix($opaque,$background,$percent);
+    $color1: $solid-color + \0;
+    #{$attribute}: $color;
+    #{$attribute}: $color1;
+    *#{$attribute}: $solid-color;
+}
+//黑色背景色半透明
+@mixin bgcolor-alpha($bgcolor: rgba(0,0,0,.5)){
+  color:#fff;
+  @if true {
+    filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#{ie-hex-str($bgcolor)}', endColorstr='#{ie-hex-str($bgcolor)}');
+  }@else{
+    background-color: #333;
+  }
+  background-color:$bgcolor;
+}
+
+@mixin w1000($width: 1000px) {
+  width: $width;
+  margin: 0 auto;
+}
+
+@mixin main-2-x($width, $bgimg) {
+  width: $width;
+  float: left;
+  overflow: hidden;
+  h2 {
+    @include icons-sprite($bgimg);
+    height: icons-sprite-height($bgimg);
+    line-height: icons-sprite-height($bgimg);
+  }
+}
+@mixin btn-items($btnname) {
+  @include icons-sprite($btnname);
+  background-size: icons-sprite-width($btnname)/2 icons-sprite-height($btnname)/2;
+}

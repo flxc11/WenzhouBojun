@@ -1,0 +1,64 @@
+@charset "utf-8";
+body {
+	font: 12px/24px $font1;
+	color: #666666;
+}
+a:link,a:visited {
+	color: #666666;
+}
+a:hover,a:active {
+	color: #0d3973;
+}
+.header {
+	width: $w100;
+	border-top: 5px solid #e7d29d;
+	height: 110px;
+}
+.in-header {
+	width: $w980;
+	overflow: hidden;
+	height: 110px;
+	margin: 0 auto;
+}
+.main {
+	width: $w980;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.banner {
+	width: $w100;
+	background: #b7302e;
+	overflow: hidden;
+}
+.in-banner {
+	width: $w980;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.topnews {
+	width: $w100;
+	height: 70px;
+	background: #f8f8f8;
+	border-bottom: 1px solid #e8e8e8;
+}
+.in-topnews {
+	width: $w980;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.main-1 {
+	@extend .in-topnews;
+	padding-top: 34px;
+	overflow: hidden;
+	border-bottom: 1px solid #e8e8e8;
+	padding-bottom: 30px;
+}
+.main-2 {
+	width: 1066px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.footer {
+	width: $w100;
+	overflow: hidden;
+}
