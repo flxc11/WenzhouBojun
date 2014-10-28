@@ -44,13 +44,6 @@
 <tr>
 <td width="60%" valign="top">
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td style="font-size:14px;font-weight:bolder;color:#224d7e;height:35px">欢迎登陆捷点科技企业网站管理系统！</td>
-</tr>
-<tr>
-<td style="color:#808080">捷点科技企业网站管理系统已全面升级，您现在使用的是<span style="color:#F90;">CMS 2.0正式版</span>，如果您有何疑问请致电捷点科技客服部进行咨询。
-</td>
-</tr>
 
 <tr>
 <td height="250" valign="top">

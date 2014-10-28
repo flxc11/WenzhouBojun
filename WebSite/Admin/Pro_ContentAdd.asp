@@ -214,18 +214,12 @@ function CheckForm()
   <td class="Right" align="right">图片：</td>
   <td colspan="3" class="Right"><div class="float_left_250txt"><input type="text" id="ShopSPic" name="ShopSPic" value="" class="Input200px"/>    
     <a href="javascript:OpenImageBrowser('ShopSPic');">浏览...</a></div>
-    <div class="picsize_left_90">221*296</div></td>
+    <div class="picsize_left_90">220*160</div></td>
 </tr>
 <tr>
   <td class="Right" align="right">价格：</td>
   <td colspan="3" class="Right"><div class="float_left_250txt"><input type="text" id="ShopSPrice" name="ShopSPrice" value="" class="Input200px"/>
   </div></td>
-</tr>
-<tr>
-  <td class="Right" align="right">参数：</td>
-  <td colspan="3" class="Right">
-  <%=Editor2("ShopPara","")%><span id="timemsg"></span><span id="msg2"></span><span id="msg"></span>
-    </td>
 </tr>
 <!--<tr>
   <td align="right" class="Right">产品编号：</td>

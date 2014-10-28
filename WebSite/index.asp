@@ -86,47 +86,7 @@
     </script>
 </head>
 <body>
-	<div class="header">
-		<div class="in-header">
-			<div class="add">
-				<span class="fav"><a href="#">设为首页</a> / <a href="#">加入收藏</a></span>
-				<span class="tel">86-577-88888888</span>
-			</div>
-			<div class="logo"><img src="images/imglogo.jpg" alt=""></div>
-		</div>
-	</div>
-	<div class="banner">
-		<div class="in-banner">
-			<div class="nav">
-				<ul>
-					<li><a href="#">首页</a></li>
-					<li><a href="#">产品中心</a></li>
-					<li><a href="#">公司简介</a></li>
-					<li><a href="#">新闻资讯</a></li>
-					<li><a href="#">在线订购</a></li>
-					<li><a href="#">留言中心</a></li>
-					<li><a href="#">联系我们</a></li>
-				</ul>
-				<div class="search">
-					<form action="search.asp" method="post">
-						<input type="submit" value=" " class="ipt-submit">
-						<input type="text" name="keyword" id="keyword" class="ipt-keyword">
-					</form>
-				</div>
-			</div>
-			<div class="ban JC1">
-		        <div class="mycarousel Public-JC">
-		            <ul>
-                        <li><img src="images/imgp1.jpg" alt="" /></li>
-                        <li><img src="images/imgp1.jpg" alt="" /></li>
-                        <li><img src="images/imgp1.jpg" alt="" /></li>
-		            </ul>
-		            <div class="pagination"></div>
-		            <div class="loading"></div>
-		        </div>
-		    </div>
-		</div>
-	</div>
+	<!--#include file="top.asp" -->
 	<div class="topnews">
 		<div class="in-topnews">
 			<div class="topnews-l"><img src="images/imgtopnews.jpg" alt=""></div>
@@ -138,19 +98,26 @@
 					</div>
 					<div id="scrollDiv">
 				        <ul>
+                            <%
+                                Set Rs=Server.CreateObject("Adodb.RecordSet")
+                                Sqla = "Select top 5 * From newsinfo Where ClassID=1 order by NewsOrder Desc"
+                                Rs.Open Sqla,Conn,1,1
+                                i=0
+                                Do While Not Rs.Eof And i<5
+                            %>
 					        <li>
-				        		<a target="_blank" title="温州成功集团有限公司新版网站全新上线！" href="/index.php?ac=article&amp;at=read&amp;did=23">温州成功集团有限公司新版网站全新上线！</a><span>2014-08-13</span>
+				        		<a href="shownews.asp?ID=<%=Rs("ID")%>" target="_blank" title="<%=Rs("NewsTitle")%>"><%=Rs("NewsTitle")%> </a><span><%=GetPostTime(Rs("ID"),"newsinfo")%></span>
 				        	</li>
-				        	<li>
-				        		<a target="_blank" title="温州成功集团有限公司新版网站全新上线！" href="/index.php?ac=article&amp;at=read&amp;did=23">温州成功集团有限公司新版网站全新上线！</a><span>2014-08-13</span>
-				        	</li>
-				        	<li>
-				        		<a target="_blank" title="温州成功集团有限公司新版网站全新上线！" href="/index.php?ac=article&amp;at=read&amp;did=23">温州成功集团有限公司新版网站全新上线！</a><span>2014-08-13</span>
-				        	</li>
+                            <%
+                                i=i+1
+                                Rs.MoveNext
+                                loop
+                                Rs.Close:Set Rs=Nothing
+                            %>
 			        	</ul>
 				    </div>
 				</div>
-			<div class="topnews-r"><a href="#">查看更多>></a></div>
+			<div class="topnews-r"><a href="news.asp">查看更多>></a></div>
 		</div>
 	</div>
 	<div class="main-1">
@@ -165,8 +132,8 @@
 		<div class="main-1-l">
 			<h2 class="h-title"><img src="images/imgcompany.jpg" alt=""></h2>
 			<dl>
-				<dt><span>温州市博钧电子商务有限公司</span>，是一家专业经营跨境电子商务贸易和咨询服务的专业公司，主营业务包括两大块：（1）以化妆品为主的大众消费品的国内品牌建设和代理销售；（2）为国内外企业提供企业管理咨询及完善的电子商务解决方案。公司自2010年5月成立以来，以持续创新的科学理念推动互联网经济与传统行业相结合...<span style="display: inline-block;padding-top: 12px;"><a href="#"><img src="images/imgmore.jpg" alt=""></a></span></dt>
-				<dd><img src="images/imgcompany1.jpg" alt=""></dd>
+				<dt><span>温州市博钧电子商务有限公司</span>，是一家专业经营跨境电子商务贸易和咨询服务的专业公司，主营业务包括两大块：（1）以化妆品为主的大众消费品的国内品牌建设和代理销售；（2）为国内外企业提供企业管理咨询及完善的电子商务解决方案。公司自2010年5月成立以来，以持续创新的科学理念推动互联网经济与传统行业相结合...<span style="display: inline-block;padding-top: 12px;"><a href="company.asp"><img src="images/imgmore.jpg" alt=""></a></span></dt>
+				<dd><a href="company.asp"><img src="images/imgcompany1.jpg" alt=""></dd></a>
 			</dl>
 		</div>
 	</div>
@@ -178,20 +145,20 @@
             <div class="video_content">
                 <div  class="video_content_list">
                     <ul>
-                    	<li><a href='/Art/Art_14/Art_14_186.aspx' target='_blank' title='索玛2014夏季平面广告花絮'><img src='images/imgp3.jpg' /><span>索玛2014夏季平面广告花絮</span></a></li>
-                    	<li><a href='/Art/Art_14/Art_14_185.aspx' target='_blank' title='2014夏秀（精剪）'><img src='images/imgp3.jpg' /><span>2014夏秀（精剪）</span></a></li>
-                    	<li><a href='/Art/Art_14/Art_14_17.aspx' target='_blank' title='索玛2014春季花絮'><img src='images/imgp3.jpg' />索玛2014春季花絮</a></li>
-                    	<li><a href='/Art/Art_14/Art_14_17.aspx' target='_blank' title='索玛2014春季花絮'><img src='images/imgp3.jpg' />索玛2014春季花絮</a></li>
-                    	<li><a href='/Art/Art_14/Art_14_17.aspx' target='_blank' title='索玛2014春季花絮'><img src='images/imgp3.jpg' />索玛2014春季花絮</a></li>
-                    	<li><a href='/Art/Art_14/Art_14_17.aspx' target='_blank' title='索玛2014春季花絮'><img src='images/imgp3.jpg' />索玛2014春季花絮</a></li>
-                    	<li><a href='/Art/Art_14/Art_14_17.aspx' target='_blank' title='索玛2014春季花絮'><img src='images/imgp3.jpg' />索玛2014春季花絮</a></li>
-                    	<li><a href='/Art/Art_14/Art_14_17.aspx' target='_blank' title='索玛2014春季花絮'><img src='images/imgp3.jpg' />索玛2014春季花絮</a></li>
-                    	<li><a href='/Art/Art_14/Art_14_17.aspx' target='_blank' title='索玛2014春季花絮'><img src='images/imgp3.jpg' />索玛2014春季花絮</a></li>
-                    	<li><a href='/Art/Art_14/Art_14_17.aspx' target='_blank' title='索玛2014春季花絮'><img src='images/imgp3.jpg' />索玛2014春季花絮</a></li>
-                    	<li><a href='/Art/Art_14/Art_14_17.aspx' target='_blank' title='索玛2014春季花絮'><img src='images/imgp3.jpg' />索玛2014春季花絮</a></li>
-                    	<li><a href='/Art/Art_14/Art_14_17.aspx' target='_blank' title='索玛2014春季花絮'><img src='images/imgp3.jpg' />索玛2014春季花絮</a></li>
-                    	<li><a href='/Art/Art_14/Art_14_17.aspx' target='_blank' title='索玛2014春季花絮'><img src='images/imgp3.jpg' />索玛2014春季花絮</a></li>
-                    	<li><a href='/Art/Art_14/Art_14_17.aspx' target='_blank' title='索玛2014春季花絮'><img src='images/imgp3.jpg' />索玛2014春季花絮</a></li>
+                        <%
+                            Set Rs=Server.CreateObject("Adodb.RecordSet")
+                            Sqla = "Select top 24 * From shopinfo Where ClassID In (2"&GetAllChild("shopClass",2)&") order by shopOrder Desc"
+                            Rs.Open Sqla,Conn,1,1
+                            i=0
+                            Do While Not Rs.Eof And i<24
+                        %>
+                    	<li><a href='showproducts.asp?ID=<%=Rs("ID")%>&ClassID=<%=Rs("ClassID")%>' target='_blank' title='<%=Rs("shopname")%>'><img src='<%=Rs("shopspic")%>' /><span><%=GetShopTitle(Rs("ID"),20)%></span><span>价格：<%=Rs("ShopSPrice")%> 元</span></a></li>
+                    	<%
+                            i=i+1
+                            Rs.MoveNext
+                            loop
+                            Rs.Close:Set Rs=Nothing
+                        %>
                     </ul>
                 </div>
             </div>
@@ -202,8 +169,6 @@
             </div>
         </div>
 	</div>
-	<div class="footer">
-		<div class="footer-1"></div>
-	</div>
+	<!--#include file="bottom.asp" -->
 </body>
 </html>

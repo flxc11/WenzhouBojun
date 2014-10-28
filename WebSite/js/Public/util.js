@@ -1,14 +1,14 @@
 define("Public/util",["easing","jCarousel","Public/css/jcarousel.css"],function(require,exports,module){
     (function($){
         /**
-         * 基于jCarousel
-         * 幻灯片 && 滚动传送带
-         * 支持全屏 && 响应式
-         * 作者：CNVP@廖文贤
+         * 禄霉脫脷jCarousel
+         * 禄脙碌脝脝卢 && 鹿枚露炉麓芦脣脥麓酶
+         * 脰搂鲁脰脠芦脝脕 && 脧矛脫娄脢陆
+         * 脳梅脮脽拢潞CNVP@脕脦脦脛脧脥
          * TIME: 2014-05-10
          *************************
          *************************
-         * HTML结构规则
+         * HTML陆谩鹿鹿鹿忙脭貌
          * Note:
          * <div class="mycarousel"> <-------------------------------| Root element
                 <div> <------------------------------| List element  |
@@ -26,8 +26,8 @@ define("Public/util",["easing","jCarousel","Public/css/jcarousel.css"],function(
         $.fn.JC = function(options){
             var opts = {
                 speed : 4000,
-                full  : false,//是否全屏
-                page  : false,//是否需要控制
+                full  : false,//脢脟路帽脠芦脝脕
+                page  : false,//脢脟路帽脨猫脪陋驴脴脰脝
                 hook  : false,
                 event : 'click'
             };
@@ -37,7 +37,7 @@ define("Public/util",["easing","jCarousel","Public/css/jcarousel.css"],function(
                 var self   = $(this).wrapAll('<div class="jcarousel-wrapper"></div>');
                 var easing = opts.full?{duration:800, easing:"easeInOutExpo"}:800
                 /**
-                 * JC 控制类
+                 * JC 驴脴脰脝脌脿
                  */
                 var JC_Control = function(dom,scroll,carousel){
                     var $dom = this.dom = $(dom,self);
@@ -59,7 +59,7 @@ define("Public/util",["easing","jCarousel","Public/css/jcarousel.css"],function(
                 target.on("jcarousel:reload jcarousel:create",function(){
                     var $w = $(this).width(),$h = $(this).height(),$h2 = $(".Control span",this).height(),$list = target.jcarousel("list"),$items=target.jcarousel("items"),$pic=$items.find('img');
                     /**
-                     * 是否全屏
+                     * 脢脟路帽脠芦脝脕
                      */
                     if(opts.full){
                         $list.css({height:$h});
@@ -73,7 +73,7 @@ define("Public/util",["easing","jCarousel","Public/css/jcarousel.css"],function(
                     $(".Control span",self).css({top:($h-$h2)/2, display:'inline'});
                 })
                 /**
-                 * 添加动力 && Auto
+                 * 脤铆录脫露炉脕娄 && Auto
                  */
                 target.jcarousel({
                     wrap: 'circular',
@@ -84,7 +84,7 @@ define("Public/util",["easing","jCarousel","Public/css/jcarousel.css"],function(
                     interval: opts.speed
                 });
                 /**
-                 * 钩子
+                 * 鹿鲁脳脫
                  */
                 if(opts.hook){
                     var hook = $(opts.hook);
@@ -96,7 +96,7 @@ define("Public/util",["easing","jCarousel","Public/css/jcarousel.css"],function(
                     });
                 }
                 /**
-                 * 是否需要分页控制
+                 * 脢脟路帽脨猫脪陋路脰脪鲁驴脴脰脝
                  */
                 if(opts.page && $(".pagination",self)[0]){
                     $(".pagination",self)
@@ -119,12 +119,12 @@ define("Public/util",["easing","jCarousel","Public/css/jcarousel.css"],function(
         }
         
         /**
-         * 二级导航
-         * 作者：CNVP@廖文贤
+         * 露镁录露碌录潞陆
+         * 脳梅脮脽拢潞CNVP@脕脦脦脛脧脥
          * TIME: 2014-05-11
          *************************
          *************************
-         * HTML结构规则
+         * HTML陆谩鹿鹿鹿忙脭貌
          * Note:
          * <ul class="nav"> <-------------------------------| Root element
                 <li class="Lv1">
@@ -156,12 +156,12 @@ define("Public/util",["easing","jCarousel","Public/css/jcarousel.css"],function(
 
 
         /**
-         * Tabs 标签卡
-         * 作者：CNVP@廖文贤
+         * Tabs 卤锚脟漏驴篓
+         * 脳梅脮脽拢潞CNVP@脕脦脦脛脧脥
          * TIME: 2014-05-11
          *************************
          *************************
-         * HTML结构规则
+         * HTML陆谩鹿鹿鹿忙脭貌
          * Note:
          * <div class="root">
                 <div class="tab-nav">
@@ -197,9 +197,9 @@ define("Public/util",["easing","jCarousel","Public/css/jcarousel.css"],function(
 
 
         /**
-         * widget 小工具集合
-         * addFav 加入收藏
-         * setHome 设为首页
+         * widget 脨隆鹿陇戮脽录炉潞脧
+         * addFav 录脫脠毛脢脮虏脴
+         * setHome 脡猫脦陋脢脳脪鲁
          * TIME: 2014-05-11
          */
 
@@ -207,8 +207,8 @@ define("Public/util",["easing","jCarousel","Public/css/jcarousel.css"],function(
             addFav : function(element){
                 var language = {
                     hostName  : document.title,
-                    hostUrl   : "http://" + window.location.hostname, //二级域名可在这里添加
-                    addfailed : "您的浏览器不支持自动加入收藏，请使用浏览器菜单手动设置"
+                    hostUrl   : "http://" + window.location.hostname, //露镁录露脫貌脙没驴脡脭脷脮芒脌茂脤铆录脫
+                    addfailed : "娴忚鍣ㄤ笉鏀寔鍔犲叆鏀惰棌锛岃鎵嬪姩鍔犲叆鏀惰棌"
                 };
                 $(element).on('click',function(){
                     document.all ?
@@ -218,9 +218,9 @@ define("Public/util",["easing","jCarousel","Public/css/jcarousel.css"],function(
             },
             setHome : function(element){
                 var language = {
-                    hostUrl   : "http://" + window.location.hostname, //二级域名可在这里添加
-                    succeed   : "恭喜！设置首页成功。",
-                    setfailed : "您的浏览器不支持自动设为主页，请使用浏览器菜单手动设置"
+                    hostUrl   : "http://" + window.location.hostname, //露镁录露脫貌脙没驴脡脭脷脮芒脌茂脤铆录脫
+                    succeed   : "璁剧疆鎴愬姛",
+                    setfailed : "娴忚鍣ㄤ笉鏀寔璁句负棣栭〉锛岃鎵嬪姩璁句负棣栭〉"
                 };
                 $(element).on('click',function(){
                     try{

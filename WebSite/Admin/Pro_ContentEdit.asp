@@ -224,12 +224,12 @@ function CheckForm()
   <td class="Right" align="right">图片：</td>
   <td colspan="3" class="Right"><div class="float_left_250txt"><input type="text" id="ShopSPic" name="ShopSPic" value="<%=ShopSPic%>" class="Input200px"/> 
     <a href="javascript:OpenImageBrowser('ShopSPic');">浏览...</a></div>
-    <div class="picsize_left_90">221*296</div></td>
+    <div class="picsize_left_90">220*160</div></td>
 </tr>
 <tr>
-  <td class="Right" align="right">参数：</td>
-  <td colspan="3" class="Right">
-    <textarea name="ShopPara" id="ShopPara" cols="45" rows="5"><%=ShopPara%></textarea></td>
+  <td class="Right" align="right">价格：</td>
+  <td colspan="3" class="Right"><div class="float_left_250txt"><input type="text" id="ShopSPrice" name="ShopSPrice" value="<%=ShopSPrice%>" class="Input200px"/>
+  </div></td>
 </tr>
 <tr>
   <td class="Right" align="right" valign="top">详细内容：</td>

@@ -250,8 +250,8 @@ GV.rootMenu =	[
 					//,["会员管理","",4,"1","1",false],
 					//["广告管理","",5,"1","1",false],
 					//["在线招聘","",6,"1","1",false],
-					//,["留言管理","",7,"1","1",false]
-					//["合作伙伴","",8,"1","1",false]
+					,["留言管理","",7,"1","1",false],
+					 ["订单管理","",8,"1","1",false]
 					<%'if Request.Cookies("CMS_CNVP")("ISAdmin")="true" then%>
 					//,
 					//["后台函数管理","",9,"1","1",false]
@@ -344,8 +344,7 @@ GV.menus[7]=	[
 				];
 
 GV.menus[8]=	[
-				["合作伙伴添加","CreateNewTab('FirendLinkAdd.asp','Firend_Link','合作伙伴添加')","2","2"],
-				["合作伙伴管理","CreateNewTab('FirendLink.asp','FirendLinkManager','合作伙伴管理')","2","2"]
+				["订单列表","CreateNewTab('OrderList.asp','OrderList','订单列表')","2","2"]
 				];
 <%if Request.Cookies("CMS_CNVP")("ISAdmin")="true" then%>
 GV.menus[9]=	[

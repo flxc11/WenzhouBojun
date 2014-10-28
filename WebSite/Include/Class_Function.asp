@@ -9,7 +9,7 @@ Function FilterHTML(str)
     re.IgnoreCase =True
     re.Global=True
     re.Pattern="<(.[^>]*)>"
-    str=re.Replace(str,"")    
+    str=re.Replace(str,"")
     set re=Nothing
     Dim l,t,c,i
     l=Len(str)
@@ -232,7 +232,7 @@ End Function
 Function GetNavPath(Table,ID)
 	Set Rs=Conn.Execute("Select ID,NavTitle,NavParent From "&Table&" Where ID="&ID&"")
 	If Not (Rs.Eof Or Rs.Bof) Then
-		Str= " > <a href=""?ID="&Rs("ID")&""">" & Rs("NavTitle") &"</a>"
+		Str= " > <a href=""product.asp?ClassID="&Rs("ID")&""">" & Rs("NavTitle") &"</a>"
 		Str=GetNavPath(Table,Rs("NavParent")) & Str
 	End if
 	GetNavPath=Str
@@ -3123,10 +3123,6 @@ if CAndE = 0 then
 	Response.Write("<td width='400'><input type='text' name='Address' id='Address' /></td><td class='STYLE1'>*必填</td></tr><tr>")
 	Response.Write("<td width='70' height='30' align='right' valign='middle'>邮箱：</td>")
 	Response.Write("<td width='400'><input type='text' name='Email' id='Email' /></td><td class='STYLE1'>*必填</td></tr><tr>")
-	Response.Write("<td width='70' height='30' align='right' valign='middle'>主页：</td>")
-	Response.Write("<td width='400'><input type='text' name='Website' id='Website' /></td><td>&nbsp;</td></tr><tr>")
-	Response.Write("<td width='70' height='30' align='right' valign='middle'>ICQ/OICQ：</td>")
-	Response.Write("<td width='400'><input type='text' name='ICQ' id='ICQ' /></td><td>&nbsp;</td></tr><tr>")
 	Response.Write("<td width='70' height='30' align='right' valign='top'>留言内容：</td>")
 	Response.Write("<td width='400' height='160'><textarea name='Content' id='Content' /></textarea></td>")
 	Response.Write("<td align='left' valign='top'><span class='STYLE1'>*必填</span></td></tr><tr><td height='30'>&nbsp;</td>")
@@ -4421,6 +4417,18 @@ Function GetNewsTitle(ID,length)
 		Str=Rsts("NewsTitle")
 		End If
 		GetNewsTitle=Str
+	Rsts.Close
+	Set Rsts=Nothing
+End Function
+
+Function GetShopTitle(ID,length)
+	Set Rsts=Conn.Execute("Select shopname From shopinfo Where ID="&ID&"")
+		If Len(Rsts("shopname"))>length Then
+		Str=Left(Rsts("shopname"),length)&"..."
+		Else
+		Str=Rsts("shopname")
+		End If
+		GetShopTitle=Str
 	Rsts.Close
 	Set Rsts=Nothing
 End Function

@@ -3,6 +3,8 @@ define(function(require){
     require("jCarousel");
     require("txtscroller");
     $(function(){
+        util.widget.setHome(".fav .sethome");
+        util.widget.addFav(".fav .aff");
         $("#scrollDiv").Scroll({
             line:1,
             speed:500,

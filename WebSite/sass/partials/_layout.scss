@@ -62,3 +62,19 @@ a:hover,a:active {
 	width: $w100;
 	overflow: hidden;
 }
+.main {
+	width: $w980;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 26px 0;
+}
+.main-r {
+	width: 730px;
+	float: right;
+	overflow: hidden;
+}
+.main-l {
+	width: 230px;
+	overflow: hidden;
+	float: left;
+}
